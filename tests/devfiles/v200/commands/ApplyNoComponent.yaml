@@ -1,0 +1,9 @@
+  - id: testAppy
+    apply:
+      attributes: 
+        test: Apply Test
+        scope: Api
+      group:
+        isDefault: true
+        kind: test
+      label: Test Apply command

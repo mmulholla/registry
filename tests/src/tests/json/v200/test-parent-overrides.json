@@ -1,0 +1,7 @@
+{
+    "SchemaFile" : "schemas/latest/ide-targeted/parent-overrides.json",
+    "Tests" : ["command-tests.json",
+        "component-tests.json",
+        "project-tests.json",
+        "starterProject-tests.json"]                         
+}

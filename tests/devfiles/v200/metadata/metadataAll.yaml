@@ -1,0 +1,10 @@
+metadata:
+  name: test-metadata
+  version: 1.0.0
+metadata:
+  name: test-metadata1
+metadata:  
+  version: 1.0.b 
+metadata:
+  test: metadata
+  outcome: pass   

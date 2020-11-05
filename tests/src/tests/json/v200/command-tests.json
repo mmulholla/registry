@@ -1,0 +1,260 @@
+{
+    "Tests" : [
+        { 
+            "FileName" : "ApplyAll.yaml",
+            "ExpectOutcome" : "PASS",
+            "Files": ["devfiles/v200/commands/commandStart.yaml",
+                        "devfiles/v200/commands/ApplyAll.yaml"] 
+        }, 
+        { 
+            "FileName" : "ApplyMinimum.yaml",
+            "ExpectOutcome" : "PASS",
+            "Files": ["devfiles/v200/commands/commandStart.yaml",
+                        "devfiles/v200/commands/ApplyMinimum.yaml"] 
+        }, 
+        { 
+            "FileName" : "ApplyNoId.yaml",
+            "ExpectOutcome" : "commands.0: id is required",
+            "Files": ["devfiles/v200/commands/commandStart.yaml",
+                        "devfiles/v200/commands/ApplyNoId.yaml"] 
+        }, 
+        { 
+            "FileName" : "ApplyCommandBadDefault.yaml",
+            "ExpectOutcome" : "group.isDefault: Invalid type. Expected: boolean, given: string",
+            "Files": ["devfiles/v200/commands/commandStart.yaml",
+                        "devfiles/v200/commands/ApplyBadDefault.yaml"] 
+        }, 
+        { 
+            "FileName" : "ApplyCommandBadKind.yaml",
+            "ExpectOutcome" : "group.kind must be one of the following: \"build\", \"run\", \"test\", \"debug\"",
+            "Files": ["devfiles/v200/commands/commandStart.yaml",
+                        "devfiles/v200/commands/ApplyBadKind.yaml"] 
+        }, 
+        { 
+            "FileName" : "ApplyCommandMissingKind.yaml",
+            "ExpectOutcome" : "group: kind is required",
+            "Files": ["devfiles/v200/commands/commandStart.yaml",
+                        "devfiles/v200/commands/ApplyMissingKind.yaml"] 
+        }, 
+        { 
+            "FileName" : "ApplyCommandNoComponent.yaml",
+            "ExpectOutcome" : "component is required",
+            "Files": ["devfiles/v200/commands/commandStart.yaml",
+                        "devfiles/v200/commands/ApplyNoComponent.yaml"] 
+        }, 
+        { 
+            "FileName" : "ExecCommand.yaml",
+            "ExpectOutcome" : "PASS",
+            "Files": ["devfiles/v200/commands/commandStart.yaml",
+                        "devfiles/v200/commands/ExecAll.yaml"] 
+        }, 
+        { 
+            "FileName" : "ExecMinimum.yaml",
+            "ExpectOutcome" : "PASS",
+            "Files": ["devfiles/v200/commands/commandStart.yaml",
+                        "devfiles/v200/commands/ExecMinimum.yaml"] 
+        }, 
+        { 
+            "FileName" : "ExecNoId.yaml",
+            "ExpectOutcome" : "commands.0: id is required",
+            "Files": ["devfiles/v200/commands/commandStart.yaml",
+                        "devfiles/v200/commands/ExecNoId.yaml"] 
+        }, 
+        { 
+            "FileName" : "ExecBadDefault.yaml",
+            "ExpectOutcome" : "Expected: boolean, given: string",
+            "Files": ["devfiles/v200/commands/commandStart.yaml",
+                        "devfiles/v200/commands/ExecBadDefault.yaml"] 
+        }, 
+        { 
+            "FileName" : "ExecBadKind.yaml",
+            "ExpectOutcome" : "group.kind must be one of the following: \"build\", \"run\", \"test\", \"debug\"",
+            "Files": ["devfiles/v200/commands/commandStart.yaml",
+                        "devfiles/v200/commands/ExecBadKind.yaml"] 
+        }, 
+        { 
+            "FileName" : "ExecBadReloadCapable.yaml",
+            "ExpectOutcome" : "Expected: boolean, given: string",
+            "Files": ["devfiles/v200/commands/commandStart.yaml",
+                        "devfiles/v200/commands/ExecBadReloadCapable.yaml"] 
+        }, 
+        { 
+            "FileName" : "ExecMissingEnvName.yaml",
+            "ExpectOutcome" : "env.0: name is required",
+            "Files": ["devfiles/v200/commands/commandStart.yaml",
+                        "devfiles/v200/commands/ExecMissingEnvName.yaml"] 
+        }, 
+        { 
+            "FileName" : "ExecMissingEnvValue.yaml",
+            "ExpectOutcome" : "env.0: value is required",
+            "Files": ["devfiles/v200/commands/commandStart.yaml",
+                        "devfiles/v200/commands/ExecMissingEnvValue.yaml"] 
+        } , 
+        { 
+            "FileName" : "ExecMissingKind.yaml",
+            "ExpectOutcome" : "group: kind is required",
+            "Files": ["devfiles/v200/commands/commandStart.yaml",
+                        "devfiles/v200/commands/ExecMissingKind.yaml"] 
+        }, 
+        { 
+            "FileName" : "ExecNoCommand.yaml",
+            "ExpectOutcome" : "commandLine is required",
+            "Files": ["devfiles/v200/commands/commandStart.yaml",
+                        "devfiles/v200/commands/ExecNoCommand.yaml"] 
+        },         
+        { 
+            "FileName" : "ExecNoComponent.yaml",
+            "ExpectOutcome" : "component is required",
+            "Files": ["devfiles/v200/commands/commandStart.yaml",
+                        "devfiles/v200/commands/ExecNoComponent.yaml"] 
+        },         
+        {
+            "FileName" : "CompositeCommand.yaml",
+            "ExpectOutcome" : "PASS",
+            "Files": ["devfiles/v200/commands/commandStart.yaml",
+                        "devfiles/v200/commands/CompositeAll.yaml"]    
+        }, 
+        {
+            "FileName" : "CompositeMinimum.yaml",
+            "ExpectOutcome" : "PASS",
+            "Files": ["devfiles/v200/commands/commandStart.yaml",
+                        "devfiles/v200/commands/CompositeMinimum.yaml"]    
+        }, 
+        { 
+            "FileName" : "CompositeNoId.yaml",
+            "ExpectOutcome" : "commands.0: id is required",
+            "Files": ["devfiles/v200/commands/commandStart.yaml",
+                        "devfiles/v200/commands/CompositeNoId.yaml"] 
+        }, 
+        {
+            "FileName" : "CompositeBadDefault.yaml",
+            "ExpectOutcome" : "group.isDefault: Invalid type. Expected: boolean, given: string",
+            "Files": ["devfiles/v200/commands/commandStart.yaml",
+                        "devfiles/v200/commands/CompositeBadDefault.yaml"]    
+        }, 
+        {
+            "FileName" : "CompositeBadKind.yaml",
+            "ExpectOutcome" : "group.kind must be one of the following: \"build\", \"run\", \"test\", \"debug\"",
+            "Files": [ "devfiles/v200/commands/commandStart.yaml",
+                        "devfiles/v200/commands/CompositeBadKind.yaml"]    
+        }, 
+        {
+            "FileName" : "CompositeBadParallel.yaml",
+            "ExpectOutcome" : "Expected: boolean, given: string",
+            "Files": [ "devfiles/v200/commands/commandStart.yaml",
+                        "devfiles/v200/commands/CompositeBadParallel.yaml"]    
+        }, 
+        {
+            "FileName" : "CompositeMissingKind.yaml",
+            "ExpectOutcome" : "kind is required",
+            "Files": [ "devfiles/v200/commands/commandStart.yaml",
+                        "devfiles/v200/commands/CompositeMissingKind.yaml"]    
+        },        
+        {
+            "FileName" : "VsCodeLaunchAll.yaml",
+            "ExpectOutcome" : "PASS",
+            "Files": ["devfiles/v200/commands/commandStart.yaml",
+                        "devfiles/v200/commands/VsCodeLaunchAll.yaml"]    
+        },        
+        {
+            "FileName" : "VsCodeLaunchMinimum.yaml",
+            "ExpectOutcome" : "PASS",
+            "Files": ["devfiles/v200/commands/commandStart.yaml",
+                        "devfiles/v200/commands/VsCodeLaunchMinimum.yaml"]    
+        },        
+        { 
+            "FileName" : "VsCodeLaunchNoId.yaml",
+            "ExpectOutcome" : "commands.0: id is required",
+            "Files": ["devfiles/v200/commands/commandStart.yaml",
+                        "devfiles/v200/commands/VsCodeLaunchNoId.yaml"] 
+        }, 
+        {
+            "FileName" : "VsCodeLaunchBadDefault.yaml",
+            "ExpectOutcome" : "Expected: boolean, given: string",
+            "Files": ["devfiles/v200/commands/commandStart.yaml",
+                        "devfiles/v200/commands/VsCodeLaunchBadDefault.yaml"]    
+        },        
+        {
+            "FileName" : "VsCodeLaunchBadKind.yaml",
+            "ExpectOutcome" : "group.kind must be one of the following: \"build\", \"run\", \"test\", \"debug\"",
+            "Files": ["devfiles/v200/commands/commandStart.yaml",
+                        "devfiles/v200/commands/VsCodeLaunchBadKind.yaml"]    
+        },        
+        {
+            "FileName" : "VsCodeLaunchMissingKind.yaml",
+            "ExpectOutcome" : "group.kind must be one of the following: \"build\", \"run\", \"test\", \"debug\"",
+            "Files": ["devfiles/v200/commands/commandStart.yaml",
+                        "devfiles/v200/commands/VsCodeLaunchMissingKind.yaml"]    
+        },        
+        {
+            "FileName" : "VsCodeLaunchInlinedAndUri.yaml",
+            "ExpectOutcome" : "Must validate one and only one schema (oneOf)",
+            "Files": ["devfiles/v200/commands/commandStart.yaml",
+                        "devfiles/v200/commands/VsCodeLaunchInlinedAndUri.yaml"]    
+        },        
+        {
+            "FileName" : "VsCodeLaunchMissingInlinedAndUri.yaml",
+            "ExpectOutcome" : "Must validate one and only one schema (oneOf)",
+            "Files": ["devfiles/v200/commands/commandStart.yaml",
+                        "devfiles/v200/commands/VsCodeLaunchMissingInlinedAndUri.yaml"]    
+        },        
+        {
+            "FileName" : "VsCodeTaskAll.yaml",
+            "ExpectOutcome" : "PASS",
+            "Files": ["devfiles/v200/commands/commandStart.yaml",
+                        "devfiles/v200/commands/VsCodeTaskAll.yaml"]    
+        },        
+        {
+            "FileName" : "VsCodeTaskMinimum.yaml",
+            "ExpectOutcome" : "PASS",
+            "Files": ["devfiles/v200/commands/commandStart.yaml",
+                        "devfiles/v200/commands/VsCodeTaskMinimum.yaml"]    
+        },        
+        { 
+            "FileName" : "VsCodeTaskNoId.yaml",
+            "ExpectOutcome" : "commands.0: id is required",
+            "Files": ["devfiles/v200/commands/commandStart.yaml",
+                        "devfiles/v200/commands/VsCodeTaskNoId.yaml"] 
+        }, 
+        {
+            "FileName" : "VsCodeTaskBadDefault.yaml",
+            "ExpectOutcome" : "Expected: boolean, given: string",
+            "Files": ["devfiles/v200/commands/commandStart.yaml",
+                        "devfiles/v200/commands/VsCodeTaskBadDefault.yaml"]    
+        },        
+        {
+            "FileName" : "VsCodeTaskBadKind.yaml",
+            "ExpectOutcome" : "group.kind must be one of the following: \"build\", \"run\", \"test\", \"debug\"",
+            "Files": ["devfiles/v200/commands/commandStart.yaml",
+                        "devfiles/v200/commands/VsCodeTaskBadKind.yaml"]    
+        },        
+        {
+            "FileName" : "VsCodeTaskMissingKind.yaml",
+            "ExpectOutcome" : "group.kind must be one of the following: \"build\", \"run\", \"test\", \"debug\"",
+            "Files": ["devfiles/v200/commands/commandStart.yaml",
+                        "devfiles/v200/commands/VsCodeTaskMissingKind.yaml"]    
+        },        
+        {
+            "FileName" : "VsCodeTaskInlinedAndUri.yaml",
+            "ExpectOutcome" : "Must validate one and only one schema (oneOf)",
+            "Files": ["devfiles/v200/commands/commandStart.yaml",
+                        "devfiles/v200/commands/VsCodeTaskInlinedAndUri.yaml"]    
+        },        
+        {
+            "FileName" : "VsCodeTaskMissingInlinedAndUri.yaml",
+            "ExpectOutcome" : "Must validate one and only one schema (oneOf)",
+            "Files": ["devfiles/v200/commands/commandStart.yaml",
+                        "devfiles/v200/commands/VsCodeTaskMissingInlinedAndUri.yaml"]    
+        },        
+        {
+            "FileName" : "CommandsAll.yaml",
+            "ExpectOutcome" : "PASS",
+            "Files": ["devfiles/v200/commands/commandStart.yaml",
+                        "devfiles/v200/commands/ExecAll.yaml",
+                        "devfiles/v200/commands/CompositeAll.yaml",
+                        "devfiles/v200/commands/VsCodeTaskAll.yaml",
+                        "devfiles/v200/commands/ApplyAll.yaml",
+                        "devfiles/v200/commands/VsCodeLaunchAll.yaml"]    
+        }
+    ]                             
+}

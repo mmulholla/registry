@@ -1,0 +1,9 @@
+- id: Test VSCodeLaunch
+  vscodeLaunch:
+    attributes: 
+      test: Exec Test test
+      scope: Api
+    inlined: inline
+    group:
+      isDefault: maybe
+      kind: test

@@ -1,0 +1,34 @@
+{
+    "Tests" : [
+        { 
+            "FileName" : "ParentAll.yaml",
+            "ExpectOutcome" : "PASS",
+            "Files": ["devfiles/v200/parent/parentAll.yaml"] 
+        },
+        { 
+            "FileName" : "ParentMinimum.yaml",
+            "ExpectOutcome" : "PASS",
+            "Files": ["devfiles/v200/parent/parentMinimum.yaml"] 
+        },     
+        { 
+            "FileName" : "ParentPluginIdAndKubernetes.yaml",
+            "ExpectOutcome" : "Must validate one and only one schema (oneOf)",
+            "Files": ["devfiles/v200/parent/parentIdAndKubernetes.yaml"] 
+        },
+        { 
+            "FileName" : "ParentPluginIdAndUri.yaml",
+            "ExpectOutcome" : "Must validate one and only one schema (oneOf)",
+            "Files": ["devfiles/v200/parent/parentIdAndUri.yaml"] 
+        },
+        { 
+            "FileName" : "ParentPluginUriAndKubernetes.yaml",
+            "ExpectOutcome" : "Must validate one and only one schema (oneOf)",
+            "Files": ["devfiles/v200/parent/parentUriAndKubernetes.yaml"] 
+        },
+        { 
+            "FileName" : "ParentPluginMissingIdUriAndKubernetes.yaml",
+            "ExpectOutcome" : "Must validate one and only one schema (oneOf)",
+            "Files": ["devfiles/v200/parent/parentMissingIdUriAndKubernetes.yaml"] 
+        }
+    ]                             
+}

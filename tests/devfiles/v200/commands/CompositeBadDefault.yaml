@@ -1,0 +1,13 @@
+  - id: CompositeTest1
+    composite:
+      attributes: 
+        test: Composite Test test
+        scope: Api
+      label: Composite Test
+      commands:
+        - runTest1
+        - runTest2
+      parallel: false
+      group:
+        isDefault: maybe
+        kind: test

@@ -1,0 +1,4 @@
+- id: Test VSCodeLaunch
+  vscodeLaunch:
+    inlined: inline
+    uri: "http://testingland"

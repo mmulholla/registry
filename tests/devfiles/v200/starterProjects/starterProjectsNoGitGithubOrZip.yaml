@@ -1,0 +1,3 @@
+  - name: testStarterProject1
+    description: Test starter project
+    subDir: test-subdir

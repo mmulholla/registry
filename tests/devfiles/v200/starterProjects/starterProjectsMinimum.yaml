@@ -1,0 +1,11 @@
+  - name: testStarterProject1
+    git:
+      remotes: 
+        origin: test-origin
+  - name: testStarterProject2
+    github:
+      remotes: 
+        origin: test-origin
+  - name: testStarterProject3
+    zip: 
+      location: git-repo.zip

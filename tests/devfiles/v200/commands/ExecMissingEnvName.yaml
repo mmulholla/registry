@@ -1,0 +1,15 @@
+  - id: testExec1
+    exec:
+      attributes: 
+        test: Exec Test test
+        scope: Api
+      commandLine: 'echo "Hello ${GREETING} ${USER}"'
+      component: api-tests
+      group: 
+        isDefault: true
+        kind: test
+      hotReloadCapable: false
+      label: "Command Exec test"
+      env:
+        - value : "Test Tester"
+      workingDir: $PROJECTS_ROOT  

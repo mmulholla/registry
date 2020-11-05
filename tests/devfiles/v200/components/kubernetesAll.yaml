@@ -1,0 +1,71 @@
+  - name: "testkubernetes1"
+    kubernetes:
+      inlined: test-inlined
+      endpoints:
+        - name: test-endpoint-public-http
+          attributes: 
+            test: Apply Test
+            scope: Api
+          exposure: public
+          path: test-path
+          protocol: http
+          secure: false
+          targetPort: 1234
+        - name: test-endpoint-public-http-secure
+          attributes: 
+            test: Apply Test
+            scope: Api
+          exposure: internal
+          path: test-path
+          protocol: http
+          secure: true
+          targetPort: 1234
+        - name: test-endpoint-public-https
+          attributes: 
+            test: Apply Test
+            scope: Api
+          exposure: none
+          path: test-path
+          protocol: http
+          secure: false
+          targetPort: 1234
+        - name: test-endpoint-public-ws
+          attributes: 
+            test: Apply Test
+            scope: Api
+          exposure: public
+          path: test-path
+          protocol: ws
+          secure: false
+          targetPort: 1234
+        - name: test-endpoint-public-ws-secure
+          attributes: 
+            test: Apply Test
+            scope: Api
+          exposure: internal
+          path: test-path
+          protocol: ws
+          secure: true
+          targetPort: 1234
+        - name: test-endpoint-public-wss
+          attributes: 
+            test: Apply Test
+            scope: Api
+          exposure: none
+          path: test-path
+          protocol: wss
+          secure: false
+          targetPort: 1234
+  - name: "testkubernetes2"
+    kubernetes:
+      uri: test-uri
+      endpoints:
+        - name: test-endpoint
+          attributes: 
+            test: Apply Test
+            scope: Api
+          exposure: public
+          path: test-path
+          protocol: http
+          secure: false
+          targetPort: 1234

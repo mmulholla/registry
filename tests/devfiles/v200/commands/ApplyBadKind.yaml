@@ -1,0 +1,10 @@
+  - id: testApply
+    apply:
+      attributes: 
+        test: Apply Test
+        scope: Api
+      component: api-testing
+      group:
+        isDefault: true
+        kind: green
+      label: Test Apply command

@@ -1,0 +1,36 @@
+  - id: Test VSCodeLaunch1
+    vscodeLaunch:
+      attributes: 
+        test: Exec Test test
+        scope: Api
+      inlined: inline
+      group:
+        isDefault: false
+        kind: test
+  - id: Test VSCodeLaunch2
+    vscodeLaunch:
+      attributes: 
+        test: Exec Test run
+        scope: Api
+      uri: http://testingland
+      group:
+        isDefault: false
+        kind: run  
+  - id: Test VSCodeLaunch3
+    vscodeLaunch:
+      attributes: 
+        test: Exec Test debug
+        scope: Api
+      inlined: inline
+      group:
+        isDefault: true
+        kind: debug
+  - id: Test VSCodeLaunch4
+    vscodeLaunch:
+      attributes: 
+        test: Exec Test build
+        scope: Api
+      uri: http://testingland
+      group:
+        isDefault: false
+        kind: build

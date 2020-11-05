@@ -1,0 +1,9 @@
+- id: Test VSCodeTask
+  vscodeTask:
+    attributes: 
+      test: Exec Test test
+      scope: Api
+    inlined: inline
+    group:
+      isDefault: maybe
+      kind: test

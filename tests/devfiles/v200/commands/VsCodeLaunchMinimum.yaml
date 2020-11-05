@@ -1,0 +1,6 @@
+- id: Test VSCodeLaunch1
+  vscodeLaunch:
+    uri: http://testingland
+- id: Test VSCodeLaunch2
+  vscodeLaunch:
+    inlined:  inline
